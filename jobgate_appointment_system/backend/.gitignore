@@ -1,0 +1,14 @@
+envs/
+envs/.env.dev
+envs/.env.prod
+envs/.env.flower
+envs/.env.stag
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
+.DS_Store
+
+

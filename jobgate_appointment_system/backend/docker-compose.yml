@@ -1,0 +1,81 @@
+#version: "3.9"
+services:
+  db:
+    image: postgres:16
+    env_file:
+      - ./envs/.env.dev
+    restart: always
+    volumes:
+      - jobgate_db_data:/var/lib/postgresql/data
+    ports:
+      - 5431:5432
+  backend:
+    container_name: backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8001:8000
+    env_file:
+      - ./envs/.env.dev
+    command: ./compose/django/start.sh
+    restart: always
+    volumes:
+      - .:/web
+    depends_on:
+      - db
+      - redis
+  worker:
+    container_name: worker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - ./envs/.env.dev
+    command: ./compose/celery/worker/start.sh celery -A jobgate_appointment_system worker -l info
+    restart: always
+    volumes:
+      - .:/web
+    depends_on:
+      - redis
+      - db
+      - backend
+  redis:
+    image: redis
+    restart: always
+    ports:
+      - 6371:6379
+  crewai:
+    container_name: crewai
+    build:
+      context: ./crewai-service/
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 80:80
+    depends_on:
+      - db
+      - backend
+      - redis
+      - worker
+    volumes:
+      - ./crewai-service/:/app
+      - type: bind
+        source: "/Users/user/Library/Application Support/ai"
+        target: /root/.local/share/app
+  flower:
+    # Build from the new flower.Dockerfile
+    build:
+      context: .
+      dockerfile: flower.Dockerfile
+    # The command remains the same
+    command: celery -A jobgate_appointment_system --broker=redis://redis:6379/0 flower
+    ports:
+      - "9000:5555"
+    depends_on:
+      - redis
+      - worker
+
+volumes:
+    jobgate_db_data:
+    flower:
