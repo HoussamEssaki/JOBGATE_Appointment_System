@@ -6,7 +6,7 @@
 
 </div>
 
-A full-stack appointment management platform designed around interactions between university stakeholders and external talents or recruiters.
+An appointment management platform designed around interactions between university stakeholders and external talents or recruiters.
 
 **Repository:** [HoussamEssaki/JOBGATE_Appointment_System](https://github.com/HoussamEssaki/JOBGATE_Appointment_System)
 
@@ -153,4 +153,4 @@ This README provides an architectural and project overview. It does not certify 
 ---
 
 **Project:** JOBGATE Appointment Management System  
-**Focus:** Full-stack development · REST APIs · Data management · Background processing
+**Focus:** Web application architecture · REST APIs · Data management · Background processing
