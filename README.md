@@ -1,5 +1,11 @@
 # JOBGATE — Appointment Management System
 
+<div align="center">
+
+<img src="assets/project-cover.svg" alt="JOBGATE_Appointment_System — custom NEXUS project cover" width="100%" />
+
+</div>
+
 A full-stack appointment management platform designed around interactions between university stakeholders and external talents or recruiters.
 
 **Repository:** [HoussamEssaki/JOBGATE_Appointment_System](https://github.com/HoussamEssaki/JOBGATE_Appointment_System)
