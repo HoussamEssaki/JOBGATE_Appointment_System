@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="480" viewBox="0 0 1600 480" role="img" aria-labelledby="t d">
+<title id="t">JOBGATE PLATFORM — Project Cover</title><desc id="d">APPOINTMENTS / UNIVERSITY / TALENT WORKFLOWS</desc>
+<defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#26313A" stroke-width="1"/></pattern><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101820"/><stop offset="1" stop-color="#18242D"/></linearGradient></defs>
+<rect width="1600" height="480" fill="url(#bg)"/><rect width="1600" height="480" fill="url(#g)" opacity=".7"/>
+<path d="M0 420H1600" stroke="#64C7FF" stroke-opacity=".55"/><rect x="64" y="54" width="8" height="372" fill="#64C7FF"/>
+<text x="105" y="92" fill="#A6ED91" font-family="monospace" font-size="17" letter-spacing="5">NEXUS / PROJECT SERIES</text>
+<text x="105" y="218" fill="#F4F7F8" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="800" letter-spacing="1">JOBGATE PLATFORM</text>
+<text x="108" y="270" fill="#AFC0C9" font-family="monospace" font-size="17" letter-spacing="1.4">APPOINTMENTS / UNIVERSITY / TALENT WORKFLOWS</text>
+<rect x="105" y="325" width="180" height="42" rx="4" fill="#64C7FF"/><text x="125" y="352" fill="#101820" font-family="monospace" font-size="17" font-weight="700">PLATFORM-006</text>
+<g fill="none" stroke="#64C7FF" stroke-width="3"><rect x="1060" y="110" width="135" height="80" rx="12"/><rect x="1320" y="110" width="135" height="80" rx="12"/><rect x="1190" y="285" width="135" height="80" rx="12"/><path d="M1195 150H1320M1127 190L1257 285M1387 190L1257 285"/><circle cx="1127" cy="150" r="8" fill="#A6ED91"/><circle cx="1387" cy="150" r="8" fill="#A6ED91"/><circle cx="1257" cy="325" r="8" fill="#A6ED91"/></g>
+<text x="1500" y="440" text-anchor="end" fill="#73838C" font-family="monospace" font-size="13" letter-spacing="3">SYSTEMS / BUILD / LEARN</text>
+</svg>
